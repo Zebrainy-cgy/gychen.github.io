@@ -7,27 +7,72 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
+      padding: 20px;
       background-color: #f4f4f4;
       color: #333;
     }
-    h1 {
+    header {
+      display: flex;
+      align-items: center;
+    }
+    #avatar {
+      width: 50px;
+      height: 50px;
+      background-color: #ccc;
+      border: 2px solid #333;
+      border-radius: 4px;
+      margin-right: 15px;
+      background-image: url('Imgs/headshot.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    header div {
+      font-weight: bold;
       font-size: 2.5rem;
+    }
+    h1 {
+      font-size: 1.5rem;
       margin: 0;
     }
-    p {
+    .section {
+      margin-top: 20px;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .section p {
       font-size: 1.2rem;
-      margin: 10px 0 0;
+      margin: 5px 0;
+    }
+    .email a {
+      color: #1a73e8;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Your personal statement goes here. Share something about who you are and what you do!</p>
+  <header>
+    <div id="avatar"></div>
+    <div>Guanyu Chen</div>
+  </header>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>I am currently in my first year of PhD at IC College, Zhejiang University, under the supervision of Professor Dong Ni. 
+      I completed my bachelor's degree in Mathematics and Applied Mathematics at Zhejiang University in 2024.</p>
+  </div>
+
+  <div class="section">
+    <h2>Research Interest</h2>
+    <p>I am now interested in modeling, analyzing, and controlling multiscale systems. This involves SPDE, mean-field theory, and homogenous theory, as well as some control methods, scientific computing, machine learning, and multiscale analysis.</p>
+  </div>
+
+  <div class="section email">
+    <h2>Email</h2>
+    <p><a href="mailto:guanyu.chen@example.com">guanyu.chen@example.com</a></p>
+  </div>
+
 </body>
 </html>
